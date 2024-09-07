@@ -1,0 +1,522 @@
+/* src/components/routes/Landing/First/First.css */
+
+/* Keyframes for slideInFromRight  slideInFromLeft  */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animated-left {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.animated-right {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.animated-top {
+    animation: slideInFromTop 1s ease-out forwards;
+}
+
+.animated-bottom {
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+.animated-paragraph {
+    animation: fadeLeft 1s ease-in-out;
+}
+
+/* ************** */
+
+.headings {
+    position: relative;
+    text-align: center;  
+    overflow: hidden;
+    height: 14vh;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
+}
+
+.heading-1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100vw;
+    font-size: 5em;
+    word-spacing: 2vw;
+    letter-spacing: 10px;
+    font-weight: 900;
+    line-height: 1;
+    transform: translateY(-50%);
+    color: transparent; 
+    background: linear-gradient(to top, #614fc973 30%, rgba(146, 218, 247, 0.527));
+    -webkit-background-clip: text; /* Apply gradient to text */
+    background-clip: text;
+    z-index: 1;
+}
+
+.heading-2 {
+    position: relative;
+    top: 27.5%;
+    right: 0;
+    color: rgba(27, 19, 19, 0.726);
+    color: whitesmoke;
+    font-size: 2em;
+    font-weight: 700;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+
+
+/* ************** */
+
+
+.super-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.video-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+.super-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+
+.super-container-content {
+    position: relative;
+    margin:auto;
+    margin-top: 12.5rem; 
+    margin-left: 10rem;
+    z-index: 10; 
+    color: white;
+    text-align: left;
+    padding: 20px;
+    width: 80%;
+
+}
+
+.super-container-line1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 1rem;
+
+}
+
+.super-container-line2{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    width:80%;
+}
+
+.super-container-btns{
+    display: flex;
+}
+
+.explore_btn{
+    color: transparent; 
+    background: linear-gradient(to bottom right, #5250e09c 15%, rgb(146, 218, 247));
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.explore_btn:hover{
+    background-color: white;
+}
+
+.contact_btn{
+    border: none;
+    border-radius: 2rem;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 1rem;
+
+}
+
+.contact_btn:hover{
+    color: white;
+    background: linear-gradient(to top left, #614fc96b 25%, rgb(146, 218, 247));
+}
+
+.super-container-satisfied{
+    margin: auto;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ************* */
+
+.about-container {
+    position: relative;
+    color: black;
+    background-color: black;
+}
+
+.about-content {
+    position: relative;
+    z-index: 10; 
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+.headi{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100vw;
+    font-size: 5em;
+    word-spacing: 2vw;
+    letter-spacing: 10px;
+    font-weight: 900;
+    line-height: 1;
+    transform: translateY(-50%);
+    color: transparent; 
+    background: linear-gradient(to top, #614fc9e7 30%, rgb(146, 218, 247));
+    -webkit-background-clip: text; /* Apply gradient to text */
+    background-clip: text;
+    z-index: 1;
+}
+
+
+.card-img-about{
+    display: flex;
+}
+
+.about-cards{
+    background-color: black;
+}
+
+.about-card { 
+    color: white;
+    background: linear-gradient(to top left, #614fc95b 30%, rgba(114, 212, 247, 0.493));
+    border-radius: 4px;
+    overflow: hidden;
+    margin: auto;
+    width:auto;
+    text-align: auto;
+    font-size: 1.1em;
+    overflow: hidden;
+    color: white;
+    padding: 0.2rem;
+
+}
+
+.about-bg {
+    height: 70vh;
+    margin: auto;
+    border-radius: 1px;
+}
+
+.card-img-left{
+    width: 40%;
+    margin: auto;
+}
+.card-img-right{
+    width: 60%;
+    margin: auto;
+}
+
+/* **************** */
+
+
+
+.team-container {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+}
+
+.team-member {
+    position: relative;
+    width: 15%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.team-member img {
+    width: 100%;
+    height: 10rem;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    background: linear-gradient(to top, black 30%, rgba(146, 218, 247, 0.527));
+}
+
+.team-member .overlayy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.5);
+    filter: brightness(50%);
+}
+
+.team-member:hover .overlayy {
+    opacity: 1;
+}
+
+.textin {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.textinn{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+/* *********** */
+
+.clients-container{
+    width: 100%;
+    margin: auto;
+}
+
+/* ***************************** */
+/* ***************************** */
+/* ***************************** */
+
+/* for mobile screens  */
+@media only screen and (min-width: 320px) and (max-width: 850px) {
+
+
+    /* ************** */
+
+    
+    .headings {
+        height: 10vh;
+        margin-bottom: 1rem;
+    }
+
+    .heading-1 {
+        font-size: 3rem;
+        word-spacing: 0.1px;
+        letter-spacing: 1px;
+       
+    }
+    .heading-2 {
+        font-size: 1.2rem;
+        word-spacing: 1vw;
+        letter-spacing: 0px;
+        margin-top: 0.25rem;
+    }
+
+
+    /* ************** */
+    
+    .super-container {
+        height: 100vh;
+    }
+
+
+    .super-container-content {
+        margin-top: 12.5rem; 
+        margin-left: 2rem;
+        width: 90%;
+
+    }
+
+    .super-container-line1{
+        font-size: 2.5rem;
+    }
+
+    .super-container-line2{
+        font-size: 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .super-container-btns{
+        display: flex;
+    }
+
+
+    .super-container-satisfied{
+        font-size: 1.25rem;
+        margin-top: 5rem;
+    }
+
+    /* ************* */
+
+
+    .card-img-about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .card-img-left{
+        width: 100%;
+    }
+    .card-img-right{
+        width: 100%;
+    }
+    
+    .about-card { 
+        font-size: 0.9em;
+        margin-bottom: 1rem;
+        width:100%;
+        padding: 0.2rem;
+
+    }
+
+    .about-bg {
+        width: 95%;
+        height: auto;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    
+    /* *********** */
+
+    .team-container {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: -2rem;
+    }
+/* 
+    .team-container::before {
+        top: 150px;
+        left: 50px;
+        width: 900px;
+        height: 750px;
+        background: linear-gradient(60deg, #651FFF 9.95%, #00BCD4 92.81%);
+        transform: rotate(40deg); 
+    }
+
+    .team-container::after {
+        top: 10px;
+        left:-80px;
+        width: 600px;
+        height: 600px;
+        background: linear-gradient(60deg, #651FFF 80%, #00BCD4 100%);
+        transform: rotate(30deg);
+    } */
+
+    /* .t-h1{
+        letter-spacing: 1vw;
+    } */
+
+    .team-members {
+        gap: 0.5rem;
+    }
+
+    .team-member {
+        width: 50%;
+    }
+
+    .team-member img {
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+/* ***************************** */

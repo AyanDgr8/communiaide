@@ -1,0 +1,71 @@
+/* src/components/routes/Landing/SliderContainer/SliderContainer.css */
+
+
+.SliderContainer-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    overflow: hidden;
+    background-color: black;
+}
+/* 
+
+.SliderContainer-container::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 800px;
+    height: 1200px;
+    background: linear-gradient(70deg, #651FFF 40%, #00BCD4 92.81%);
+    opacity: 0.25; 
+    transform: rotate(-50deg);
+    z-index: -10; 
+}
+
+.SliderContainer-container::after {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 750px;
+    width: 400px;
+    height: 550px;
+    background: linear-gradient(120deg, #651FFF 15%, #00BCD4 95%);
+    opacity: 0.25;
+    transform: rotate(-50deg);
+    z-index: -10; 
+} */
+
+.sl-heading{
+    margin-bottom: 3rem;
+
+}
+
+.machines-slider{
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+
+}
+
+.slide img{
+    width: 10rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.machines-slider .slick-arrow.slick-prev,
+.machines-slider .slick-arrow.slick-next {
+    display: none !important;
+}
+
+/* for mobile screens  */
+/* @media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .conti-1{
+        font-size: 2.5rem;
+
+    }
+
+} */

@@ -1,0 +1,338 @@
+/* src/components/routes/Landing/Work/Work.css */
+
+
+.categories-container {
+    position: relative;
+    color: black;
+    overflow: hidden;
+    background-color: black;
+}
+
+.categories-cards {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.categories-sub-cards {
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.category-card {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+.category-card img {
+    width: 60%;
+    margin: auto;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.category-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.5);
+    filter: brightness(50%);
+}
+
+.category-card:hover .overlay {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.texti {
+    font-size: 1.5em;
+}
+
+/* ************* */
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Smooth scrolling between sections */
+    position: relative;
+}
+
+
+.work-container {
+    flex: 0 0 100vw; /* Each section takes the full viewport width*/
+    scroll-snap-align: start; /* Align sections to the start of the viewport */
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+/* ************* */
+
+.work-stage-1{
+    display: flex;
+}
+.work-stage1-left{
+    width:50%;
+}
+.stage-1{
+    height: 75vh;
+}
+
+.work-stage1-right{
+    width: 50%;
+}
+
+.stage-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    z-index: 1;
+}
+
+.stage-card {
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    max-width: 90%;
+    z-index: 2;
+    text-align: left;
+}
+
+.stage-card-heading{
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 90%;
+}
+
+.boldy{
+    font-weight: 700;
+}
+
+.stage-card-para{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* ********** */
+
+.work-stage-2{
+    display: flex;
+}
+.work-stage2-left{
+    width:50%;
+}
+.work-stage2-right{
+    width: 50%;
+}
+.stage-2{
+    height: 75vh;
+    margin-left: -3rem;
+}
+.s2-stage{
+    max-width: 100%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.stage-card > ul {
+    margin-top: -0.5rem;
+}
+
+/* ********** */
+
+.work-stage-3{
+    display: flex;
+    position: sticky;
+}
+.work-stage3-left{
+    width:50%;
+}
+.work-stage3-right{
+    width: 50%;
+    margin-left: -2rem;
+}
+.stage-3{
+    height: 75vh;
+    margin-left: 1rem;
+}
+
+.s3-card > ul {
+    margin-top: 1rem;
+}
+
+
+/* ********** */
+
+.work-stage-4{
+    display: flex;
+}
+.work-stage4-left{
+    width:50%;
+}
+.work-stage4-right{
+    width: 50%;
+}
+.stage-4{
+    height: 75vh;
+    margin-left: -3rem;
+}
+.s4-cards{
+    margin-left: 5rem;
+}
+.s4-card{
+    margin-top: -1rem;
+}
+
+
+/* for mobile screens  */
+@media only screen and (min-width: 320px) and (max-width: 850px) {
+
+    .text {
+        font-size: 1.25em;
+    }
+    
+    .work-stage-1{
+        display: flex;
+        flex-direction:column ;
+    }
+    .work-stage1-left{
+        width:100%;
+    }
+    .stage-1{
+        height: 40vh;
+        margin: 1rem;
+    }
+    
+    .work-stage1-right{
+        width: 90%;
+        margin: auto;
+    }
+    
+    .stage-cards {
+        display: flex;
+        margin-top: 1rem;
+        z-index: 1;
+    }
+    
+    .stage-card {
+        color: white;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        max-width: 100%;
+        z-index: 2;
+        text-align: left;
+    }
+    
+    .stage-card-heading{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .stage-card-para{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    /* ********** */
+    
+    .work-stage-2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .work-stage2-left{
+        width:100%;
+    }
+    .work-stage2-right{
+        width: 100%;
+    }
+    .stage-2{
+        height: 40vh;
+        margin: auto;
+    }
+    .s2-stage{
+        max-width: 100%;
+        margin: 1rem;
+    }
+    
+    .stage-card > ul {
+        margin-top: -0.5rem;
+    }
+    
+    /* ********** */
+    
+    .work-stage-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .work-stage3-left{
+        width:100%;
+    }
+    .work-stage3-right{
+        width: 100%;
+        margin:1rem;
+    }
+    .stage-3{
+        height: 40vh;
+        margin: 1rem;
+    }
+    
+    .s3-card > ul {
+        margin-top: 1rem;
+    }
+    
+    /* ********** */
+    
+    .work-stage-4{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .work-stage4-left{
+        width:100%;
+    }
+    .work-stage4-right{
+        width: 100%;
+    }
+    .stage-4{
+        height: 40vh;
+        margin: auto;
+    }
+    .s4-cards{
+        margin:1rem;
+    }
+    .s4-card{
+        margin-top: 0.5rem;
+    }
+
+    .categories-cards {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+}

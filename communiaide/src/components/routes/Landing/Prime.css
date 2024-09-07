@@ -1,0 +1,38 @@
+/* src/components/routes/Landing/Prime.css */
+
+
+.main-page{
+    color: white;
+}
+
+.main-page {
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+/* 
+.main-page::before {
+    content: "";
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    width: 500px;
+    height: 750px;
+    background: linear-gradient(60deg, #651FFF 9.95%, #00BCD4 92.81%);
+    opacity: 0.25; 
+    transform: rotate(45deg);
+    z-index: -10; 
+}
+
+.main-page::after {
+    content: "";
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    width: 760px;
+    height: 650px;
+    background: linear-gradient(158.27deg, #651FFF 9.95%, #00BCD4 92.81%);
+    opacity: 0.25;
+    transform: rotate(30deg);
+    z-index: -10; 
+} */

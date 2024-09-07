@@ -1,0 +1,37 @@
+/* src/components/routes/Landing/Video/Video.css */
+
+
+.carousel-video {
+    width: 100%;
+    height: 80vh; /* Adjust as needed */
+    border: none;
+}
+.carousel-inner {
+    max-width: 75%; /* Adjust for a smaller or larger carousel */
+    margin: auto;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+/* *********** */
+
+
+
+
+
+/* for mobile screens  */
+@media only screen and (min-width: 320px) and (max-width: 850px) {
+
+    .carousel-video {
+        height: 50vh; /* Adjust as needed */
+        border: none;
+    }
+}

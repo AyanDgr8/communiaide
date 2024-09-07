@@ -1,0 +1,115 @@
+/* src/components/routes/Advertise/Advertise.css */
+
+
+.adv-super-container{
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+}
+
+.adv-super-container::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -200px;
+    width: 900px;
+    height: 1050px;
+    background: linear-gradient(40deg, #651FFF 35%, #00BCD4 92.81%);
+    opacity: 0.25; 
+    transform: rotate(25deg);
+    z-index: -10; 
+}
+
+.adv-super-container::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    width: 760px;
+    height: 650px;
+    background: linear-gradient(58.27deg, #651FFF 9.95%, #00BCD4 92.81%);
+    opacity: 0.25;
+    transform: rotate(65deg);
+    z-index: -10; 
+}
+
+.adv-super-content{
+    margin-top: 15rem;
+}
+
+.tt-2{
+    font-family: 'TT Norms', sans-serif;
+}
+.tt-1{
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+.adv-super-para {
+    width: 75%;
+    background: linear-gradient(to bottom right, #7842eb81 50%, #00bbd48a 60%);
+    border-radius: 20px;
+    padding: 1rem;
+    color: white;
+    margin: auto;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+}
+.adv-super-bg{
+    height: 100vh;
+}
+
+/* ************ */
+
+/* for mobile screens  */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+
+    .adv-super-container{
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .adv-super-container::before {
+        top: 10px;
+        left: -150px;
+        width: 800px;
+        height: 1000px;
+        background: linear-gradient(60deg, #651FFF 9.95%, #00BCD4 92.81%);
+        transform: rotate(140deg);
+    }
+    
+    .adv-super-container::after {
+        top: 30px;
+        left: 200px;
+        width: 760px;
+        height: 650px;
+        background: linear-gradient(170deg, #651FFF 9.95%, #00BCD4 92.81%);
+        transform: rotate(65deg);
+    }
+    
+    .adv-super-left{
+        width: 100%;
+    }
+    
+    .adv-super-right{
+        width: 100%;
+    }
+
+    .adv-super-content{
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+    
+    .adv-super-para{
+        width: 90%;
+        margin-bottom: 2rem;
+        background: linear-gradient(to bottom right, #7842eb5e 40%, #00bbd46c );
+    }
+    .adv-super-bg{
+        width: 100%;
+        height: auto;
+        height: 60vh;
+    }
+    
+}

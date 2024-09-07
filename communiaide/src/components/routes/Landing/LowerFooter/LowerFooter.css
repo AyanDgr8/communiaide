@@ -1,0 +1,25 @@
+/* src/components/routes/Landing/LowerFooter/LowerFooter.css */
+
+
+.lower-footer-content{
+    position: relative;
+    margin: auto;
+}
+
+.lower-footer-lines{
+    font-weight: 400;
+    background-color:white;
+    color: black;
+    margin: auto;
+    width: 100%;
+} 
+
+
+/* for mobile screens */
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+    .lower-footer-content{
+        width: 100%;
+        margin: auto;
+        background-color: white;
+    }
+}
